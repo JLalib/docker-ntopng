@@ -1,6 +1,8 @@
 # ntopng
 docker-compose ntopng | High-Speed Web-based Traffic Analysis and Flow Collection
 
+![ntop](https://github.com/JLalib/docker-ntopng/assets/57844755/bd01f959-91f5-4c50-ad07-c1fb0d505f5a)
+
 Crea el directorio de trabajo en docker y situate en él.
 
 mkdir ntopng && cd ntopng
