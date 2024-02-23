@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  ntopng:
+    container_name: "ntopng"
+    image: ntop/ntopng:stable
+    command: --community -d /var/lib/ntopng  -r 127.0.0.1:6379@0 -w 0.0.0.0:3000
+    volumes:
+      - ./data/ntopng:/var/lib/ntopng
+    network_mode: host
+    restart: unless-stopped
+
+  redis:
+    container_name: "ntopng-redis"
+    image: redis:alpine
+    command: --save 900 1
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis:/data
+    restart: unless-stopped
