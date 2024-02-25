@@ -9,9 +9,9 @@ mkdir ntopng && cd ntopng
 
 Crear los directoios ntopng y redis y darles permisos 777.
 
-mkdir -p /data/ntopng
+mkdir -p data/ntopng
 
-mkdir -p /data/redis
+mkdir -p data/redis
 
 Crear el fichero docker-compose.yml o copiarlo de aquí.
 
