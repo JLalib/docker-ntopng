@@ -29,3 +29,4 @@ Usuario y contraseña
 
 admin:admin
 
+Nota: Es importante que en caso de parar el contenedor ntopng y redis, levantar previamente le redis antes, para que así coja las credenciales guardadas en la bbdd.
